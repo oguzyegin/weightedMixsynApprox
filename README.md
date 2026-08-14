@@ -39,7 +39,7 @@ The goal is to obtain a low-order controller $C_m$ that stabilizes the plant and
 1. Defines the time-delay plant and the weights `W1` and `W2`.
 2. Converts the numerator and denominator quasi-polynomials to a YALTA-compatible representation with `nPdP2YALTA`.
 3. Detects unstable poles and constructs the inner/outer factorization required by the time-delay $H_\infty$ design.
-4. Computes an infinite-dimensional reference controller `Copt` using `TO_hinfsyn` (One can also use updated versions `hinf_mixed_sensitivity.m` and `hinf_mixed_sensitivity.py` to find $\gamma_{opt}$ and the optimal controller).
+4. Computes an infinite-dimensional reference controller `Copt` using `TO_hinfsyn` (One can also use updated versions `hinf_mixed_sensitivity.m` or `hinf_mixed_sensitivity.py` to find $\gamma_{opt}$ and the optimal controller).
 5. Samples the plant and controller frequency responses.
 6. Generates fixed-order initial controllers using weighted state-space estimation and vector fitting.
 7. Applies several fixed-order approximation/tuning methods.

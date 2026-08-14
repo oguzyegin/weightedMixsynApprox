@@ -21,8 +21,7 @@ $$
 the performance measure used throughout the example is
 
 $$
-\gamma(C)
-=
+\gamma(C) =
 \sup_{\omega}
 \sqrt{
 \left|W_1(j\omega)S(j\omega)\right|^2

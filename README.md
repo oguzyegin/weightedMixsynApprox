@@ -155,8 +155,6 @@ Sequential Convex Optimization/
 Hinf Optimal with YALTA v3/
     YALTA-based time-delay H-infinity design routines
 
-tds-control-main/
-    TDS-CONTROL toolbox used for exact delayed-loop stability tests
 ```
 
 ## Requirements
@@ -168,7 +166,7 @@ The code is written for MATLAB. Depending on the method being run, it uses:
 - Robust Control Toolbox (`systune`)
 - Symbolic Math Toolbox (`nPdP2YALTA`)
 - YALTA, included under `Hinf Optimal with YALTA v3/`
-- TDS-CONTROL, included under `tds-control-main/`
+- TDS-CONTROL
 - YALMIP and SDPT3 for the sequential convex method
 - HANSO for `designTDSMixedSensitivity8`
 
@@ -186,7 +184,7 @@ main_example
 
 The script adds the supplied YALTA, sequential-convex-optimization, and TDS-CONTROL directories to the MATLAB path where needed.
 
-For the sequential convex method, make sure the YALMIP directory and an SDPT3 installation are available on the MATLAB path. For the TDS-CONTROL optimization, HANSO must also be available.
+For the sequential convex method, make sure the YALMIP directory and an SDPT3 installation are available on the MATLAB path. For the TDS-CONTROL optimization, TDS-CONTROL and HANSO packages must also be available.
 
 ## Notes
 

@@ -54,7 +54,7 @@ The supplied example uses a desired controller order of 8.
 
 `Sequential Convex Optimization/weightedSsest.m`
 
-Fits an order-$m$ state-space model to the reference-controller FRD. The fitting weight used in the main example is based on
+Fits an order- $ m $ state-space model to the reference-controller FRD. The fitting weight used in the main example is based on
 
 $$
 \left|W_x P S_{\mathrm{opt}}^2\right|,
@@ -91,8 +91,7 @@ Automatic initialization can use unstable plant poles and sensitivity peaks; use
 The proposed fixed-order approximation method. It uses the reference-oriented residual
 
 $$
-E_{\mathrm{app}}
-=
+E_{\mathrm{app}} =
 W_x P(C_{\mathrm{opt}}-C)S S_{\mathrm{opt}}
 $$
 
@@ -191,4 +190,4 @@ For the sequential convex method, make sure the YALMIP directory and an SDPT3 in
 
 ## Notes
 
-This repository is research code intended for experimentation with fixed-order approximation of mixed-sensitivity $H_\infty$ controllers for time-delay systems. Several methods use different finite-dimensional or frequency-domain representations for optimization and stability verification; the final performance comparison in `main_example.m` is evaluated against the original delayed plant on a dense frequency grid.
+This repository is research code intended for experimentation with fixed-order approximation of mixed-sensitivity $ H_\infty $ controllers for time-delay systems. Several methods use different finite-dimensional or frequency-domain representations for optimization and stability verification; the final performance comparison in `main_example.m` is evaluated against the original delayed plant on a dense frequency grid.
